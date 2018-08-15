@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+p, li {
+  font-size: 42px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;/*覆盖掉默认样式中的间隙*/
+  padding: 20px 0;    
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;/*为元素内容的文本内容提供了阴影*/
+  		/*第一个像素值设置水平对齐--它的横向偏移；一个负值会导致向左偏移
+  		     第二个像素值设置了垂直对齐--它的纵向偏移；一个负值会导致向上偏移
+  		     第三个像素值设置了阴影的模糊半径--越大的值会产生越模糊的阴影
+  		  第四个值设置了阴影的基色
+  		*/
+}
+
+/*属性选择器,选择 <img src="myimage.png"> 而不是 <img>*/
+img[src]{
+	width: 500px;
+  border: 1px solid black;
+}
+/*伪类选择器,选择 <a>, 但是只在鼠标悬停在链接上时*/
+a:hover{
+	
+}
+/*标识（ID）选择器,选择 <p id="my-id"> 或 <a id="my-id">*/
+#my-id{
+	
+}
+/*类别选择器 , 选择 <p class="my-class"> 和 <a class="my-class">*/
+.my-class{
+	
+}
+/*（ font-family 意味着你想要你的文本使用的字体。
+        ）这条规则首先为整个页面设定了一个全局字体和字号（因为 <html> 是整个页面的父元素，
+     而且它所有的子元素都会继承相同的 font-size 和 font-family）*/
+html {
+  font-size: 20px; /* px 表示 “像素（pixels）”: 这个基础字号现在高10像素 */
+  font-family: 'Hanalei Fill', cursive; /* 剩下的部分是你从 Google fonts 上获取的输出,这个可以根据Google fonts上的更换 */
+  background-color:#D3D3D3;
+
+}
+
+/*CSS布局主要就是基于盒模型，每个占据你页面空间的块都有这样的属性：
+	内边距（padding），围绕着内容的空间（比如围绕段落的空间）
+	边框（border），紧接着内边距的实体线段
+	外边距（margin），围绕元素外部的空间
+  这一部分我们用：
+  	width （属于一个元素的）
+	background-color ，元素内容和内边距之后的颜色
+	color ，元素内容的颜色（通常是文本）
+	text-shadow ，为元素内的文本设置阴影
+	display ，设置元素的显示模式（暂时不用关心这部分内容）
+*/
+
+body {
+  width: 600px;/*强制页面永远保持600像素宽*/
+  margin: 0 auto;/*在margin或padding这样属性中设置两个值时，第一个值代表元素的上方和下方，
+                                           （本例中设为0），第二个值代表左边和右边（在这里，auto是一个特殊值，意思是水平方向上左右对称）*/
+  background-color: Coral;
+  padding: 0 20px 20px 20px;/*内边距设置四个值来让内容四周产生一点空间。值以上、右、下、左的顺序排列*/
+  border: 5px solid black;/*简单的为页面四周设置了5像素的黑色实线边框*/
+}
+img {
+  display: block;/*body元素是块级元素，意味着它占据了页面的空间并且能够赋予外边距和其他改变间距的值，
+  				       与之对应得是行内元素，意味着它不能，所以为了使图像有外边距，我们必须使用display:block给予其块级行为*/
+  margin: 0 auto;
+}

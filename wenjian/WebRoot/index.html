@@ -1,0 +1,47 @@
+<!DOCTYPE html><!-- 用来链接一些好的HTML应该遵守的规则 -->
+<!-- 写注释快捷键 shift+ctrl+c -->
+<html><!-- 包含整个页面的内容，根元素 -->
+  <head><!-- 包含你想添加的内容，但是不会被用户所看到，包括想被搜索引擎搜索
+         到的关键字和页面描述，CSS样式表和字符编码说明等 -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+	<!--将CSS文件应用到HTML文件中 -->
+	<link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+	
+	<!-- 在访问Google Fonts中保存的内容，用在Google Fonts中找到的字体代替font-family中的占位行 -->
+    <meta charset="utf-8"><!-- 指定了文档需要使用的字符编码是UTF-8，它可以处理任何文本内容 -->
+    <title>My test page</title><!-- 设置页面的标题，显示在浏览器标签页上 -->
+  </head>
+  <body><!-- 包含想让用户在访问页面时看见的所有东西 -->
+
+      <h1>my main title</h1>
+    <h2>my top level heading</h2>
+    <h3>my subheading</h3>
+    <h4>my sub-subheading</h4>
+    <img src="images/3.jpg" alt="My test image" >
+       <!-- 在页面里插入图像，我们需要告诉html图像在images目录下，而images目录与index.html处于同级目录，
+           要从index.html所处的一级目录进入图片所在目录，我们所需文件路径是images/图像文件名
+            在src=""的双引号中插入文件路径 -->
+    <p>this is a single paragraph</p>
+    <p>At Mozilla, we’re a global community of</p>
+    
+<ul> 
+<!-- 无序列表 -->
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+</ul>
+<ol> 
+<!-- 有序列表 -->
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+</ol>
+<p>working together ... </p>
+<a href="https://www.bilibili.com/">bilibili</a>
+    <!--植入一个链接  hypertext reference （超文本引用）-->
+     <p>My cat is<strong> very </strong> grump</p>
+     <button>Change user</button>
+ 	<script src="scripts/main.js"></script>
+ 		<!--将JavaScript引入页面 -->
+  </body>
+</html>
